@@ -1,0 +1,59 @@
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+conda-env/
+*.egg-info/
+
+# Environment and credentials
+.env
+*.env
+.env.*
+*.pem
+*.key
+*.token
+
+# Qiskit / IBM Quantum local credentials
+qiskit-ibm.json
+qiskitrc
+.qiskit/
+.qiskit-ibm/
+
+# Local data and generated outputs
+data/
+datasets/
+outputs/
+runs/
+logs/
+artifacts/
+cache/
+.cache/
+
+# Model checkpoints and serialized objects
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+*.h5
+*.onnx
+
+# Large/generated notebook exports
+*.html
+*.pdf
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
