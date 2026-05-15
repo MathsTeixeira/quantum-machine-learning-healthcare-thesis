@@ -190,6 +190,7 @@ The IBM hardware run was performed as a reduced feasibility experiment on a bala
 |---|---:|
 | Backend | `ibm_fez` |
 | Physical qubit | 23 |
+| Selected readout error | 0.004150390625 |
 | Train subset | 80 images: 40 benign + 40 malignant |
 | Test subset | 80 images: 40 benign + 40 malignant |
 | Shots | 128 |
@@ -201,6 +202,13 @@ The IBM hardware run was performed as a reduced feasibility experiment on a bala
 | Reported quantum seconds | 323.0 |
 | Reported QPU minutes | 5.3833 |
 | Maximum transpiled depth | 6 |
+
+The retained readout calibration values were:
+
+| Calibration quantity | Value |
+|---|---:|
+| P(measured 0 \| prepared 0) | 0.9921875 |
+| P(measured 0 \| prepared 1) | 0.0078125 |
 
 ### Hardware subset QSVM comparison
 
@@ -238,5 +246,3 @@ The hardware result supports executability of the one-qubit QSVM kernel on IBM Q
 The notebooks set a fixed seed where applicable and save intermediate artifacts and runtime manifests. The simulator notebook should be considered the primary diagnostic benchmark. The hardware notebook should be considered a reduced hardware feasibility experiment.
 
 Before publishing notebook outputs, clear outputs from cells that contain IBM Quantum account metadata, especially the authentication cell. Do not commit API keys, `.env` files, IBM credential files, datasets, generated outputs, or model checkpoints.
-
-Generated outputs are excluded by `.gitignore`.
